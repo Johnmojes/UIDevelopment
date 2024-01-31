@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table,tr,td{
+              border: 1px solid black;
+              border-spacing: 5px;
+              padding: 25px;
+        }
+        table{
+            width: 100%;
+            background-color: aqua;
+        }
+        thead{
+         background-color: blueviolet;
+        }
+        tbody tr td{
+            background-color: antiquewhite;
+        }
+        tfoot{
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+      <table >
+        <thead>
+            <tr style="color: white;">
+                <th>S.No.</th>
+                <th>ProductName</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Vivo</td>
+                <td>21000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Samsung</td>
+                <td>20000</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Realme</td>
+                <td>19000</td>
+            </tr>
+        </tbody>
+       <tfoot>
+        <tr>
+            <td colspan="2">Total</td>
+            <td>60000</td>
+        </tr>
+       </tfoot>
+        
+      </table>
+</body>
+</html>
