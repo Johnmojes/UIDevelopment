@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+        <style>         
+                    /* Relationship selectors */
+             /* direct child selector */
+             ol >li{
+                color: blue;
+                border: 1px solid red;
+                margin-bottom: 20px;
+             }
+
+             /* descendent selector */
+             ol li {
+                color:green;
+             }
+
+             /* targetting an element with class */
+             .container > .content {
+                border: 1px solid red;
+             }
+             .container > .m {
+                border: 1px solid green;
+             }
+
+        </style>
+</head>
+<body>
+     <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Bootstrap</li>
+        <li>JavaScript</li>
+     </ol>
+        
+    <div class="container">
+        <p class="content">This is a para</p>
+        <h1 class="m">Heading</h1>
+    </div>
+</body>
+</html>

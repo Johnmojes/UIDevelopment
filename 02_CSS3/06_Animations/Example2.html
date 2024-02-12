@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+                  /* transition */
+        div{
+            border: 10px dashed blue;
+            padding: 20px;
+            
+            --webkit-transition-property:border;
+            --webkit-transition-delay:2s;
+            --webkit-transition-duration:3s;
+            --webkit-transition-timing-function:linear;
+
+            transition-property: border, background-color, border-width;
+           
+                    transition-delay:2s;
+                   transition-duration:3s;
+                    transition-timing-function:linear;
+        }
+
+        div:hover{
+            border: 10px solid green;
+            border-width: 1px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div>HTML</div>
+</body>
+</html>

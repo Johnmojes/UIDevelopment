@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>       
+                    /* attribute selectors */
+
+                    /* has attribute  */
+        [href]{
+            color: red;
+        }
+                   /* attribute value equals to */
+            [target="_blank"]{
+                color: yellow;
+            }
+                      
+                    /* attribute value starts with */
+                 [type ^="te"]{
+                    color: blue;
+                 }   
+               
+                  /* attribute value ends with */
+                 [name $= "word"]{
+                    color: red;
+                 }
+
+                  /* attribute value contains */
+                  [name $= "email"]{
+                    color: green;
+                 }
+    </style>
+</head>
+<body>
+    <a href="www.facebook.com">Facebook</a><br><br>
+    <a href="www.google.com" target="_blank">Google</a><br><br>
+        
+    username : <input type="text" name="username"><br><br>
+    password : <input type="password" name="password"><br><br>
+    Email :     <input type="email" name="email"><br><br>
+
+</body>
+</html>

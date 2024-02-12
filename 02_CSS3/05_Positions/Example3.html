@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section,div{
+            border: 1px solid blue;
+            margin-bottom: 10px;
+            padding: 20px;
+        }
+        .withoutParent{
+            position: absolute;
+            top: 500px;
+            z-index: 1;
+        }
+        .withPositionedParent{
+            position: relative;
+            top: 400px;
+        }
+        .withPositionedParent{
+            position: absolute;
+            top: 600px;
+            left: 500px;
+
+        }
+        .withoutPositionedParent{
+            position: absolute;
+            top: 481px;
+            /* z-index: 0; */
+
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Absolute Element without Parent</h2>
+    <div class="withoutParent">HTML</div>
+
+    <h2>Absolute Element with Positioned Parent</h2>
+    <section class="withPositionedParent">
+        <div >CSS</div>
+    </section>
+
+    <h2>Absolute Element without Positioned Parent</h2>
+    <section class="withoutPositionedParent">
+        <div >JavaScript</div>
+    </section>
+
+</body>
+</html>

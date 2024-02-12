@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>             
+
+                             /* float */
+        .floatcontainer{
+            border: 1px solid blue;
+            float: left;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        section.floatcontainer div{
+            float: left;
+            width: 25%;
+
+            padding: 20px;
+            box-sizing: border-box;
+
+            border: 1px solid blue;
+
+            margin: 2px;
+            width: 24%;
+        }
+
+        section.floatcontainer div:nth-child(2){
+            width: 50%;
+
+        }
+
+                         /* flex */
+
+        .flexcontainer{
+            border: 1px solid blue;
+            display: flex;
+            padding: 20px;
+        }
+
+        .flexcontainer div{
+            flex: 1;
+            border: 1px solid blue;
+            padding: 20px;
+            margin: 2px;
+        }  
+        .flexcontainer div:nth-child(2){
+            flex: 2;
+        }
+
+                     
+                     /* GRID  */
+
+           .gridcontainer{
+            border: 1px solid blue;
+                 padding: 20px;
+                 margin: 5px;
+                 display: grid;
+                
+                 grid-template-columns: 25% 50% 25%;
+           }          
+             
+            .gridcontainer div{
+                 border: 1px solid blue;
+                 padding: 20px;
+                 margin: 2px;
+            }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Layout Using Float</h1>
+    <section class="floatcontainer">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </section>
+
+    <h1>Layout Using Flex</h1>
+    <section class="flexcontainer">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </section>
+
+
+    <h1>Layout Using GRID</h1>
+    <section class="gridcontainer">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </section>
+</body>
+</html>

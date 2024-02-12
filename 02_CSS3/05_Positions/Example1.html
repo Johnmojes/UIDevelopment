@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>                    
+                              /* position: absolute;   */
+        div{
+            border: 1px solid blue;
+            margin-bottom: 10px;
+            padding: 20px;
+
+        }
+        div:first-child{
+            background: linear-gradient(orange,White,Green);
+            position: absolute;   /* Converts block level to Inline */
+            
+            left: 500px;
+            top: 100px;
+        }
+        section{
+            border: 1px solid red;
+            height: 150px;
+            background-color:lightgreen;
+        }
+
+
+    </style>
+</head>
+<body>
+    <section>
+        <div>One</div>
+    </section>
+       <div>Two</div>
+       <div>Three</div>
+       <div>Four</div>
+</body>
+</html>
